@@ -224,20 +224,7 @@ var_dump(isValid("ahoj cau debil nazdar", ["debil"]));
 
 <?PHP
 
-function Table() {
-    for ($radek=1; $radek<=10; $radek++)
-    {
-        echo "<tr>";
-        for($sloupec=1; $sloupec<=10; $sloupec++)
-        {
-            echo"<td>"
-            echo "$radek $sloupec";
-            echo "</td>"
-        }
-            echo "</tr>";
-        }
-        tabulka()
-        
+
 ?>
 
     
