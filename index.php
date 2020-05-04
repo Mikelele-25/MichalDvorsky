@@ -1,4 +1,15 @@
+<?php
 
+
+require 'tracy/tracy.phar';
+use Tracy\Debugger;
+Debugger::enable();
+Debugger::$strictMode = true;?>
+ 
+
+
+
+?>
 <?php
 echo "<h2>ECHO VYPIS</h2>";
 
@@ -71,63 +82,63 @@ echo $cena .  "\\";
 echo "<h2>Aritmeticke operatory</h2>";
 $a = 8;
 $b = 4;
- var_dump($a+$b). "<br>";
+ dump($a+$b). "<br>";
 $c = 8 ;
 $d = 4;
- var_dump($c-$d). "<br>";
+ dump($c-$d). "<br>";
  $e = 8 ;
 $f = 4;
- var_dump($e/$f). "<br>";
+ dump($e/$f). "<br>";
  $g = 8 ;
 $h = 4;
- var_dump($g*$h). "<br>";
+ dump($g*$h). "<br>";
  echo "<h2>Prirovnavaci operatory</h2>";
  $i = 8;
  $i++;
- var_dump($i++). "<br>";
+ dump($i++). "<br>";
 
  $j = 8;
  $j--; 
-  var_dump($j--). "<br>";
+  dump($j--). "<br>";
   
   $k = 8;
   $l = 4;
   $k+=$l;
-  var_dump($k+=$l). "<br>";
+  dump($k+=$l). "<br>";
   $m = 8;
   $n = 4;
   $m-=$n;
-  var_dump($m-=$n). "<br>";
+  dump($m-=$n). "<br>";
   $o = 8;
   $p = 4;
   $o*=$p;
-  var_dump($o*=$p). "<br>";
+  dump($o*=$p). "<br>";
   $q = 8;
   $r = 4;
   $q/=$r;
-  var_dump($q/=$r). "<br>";
+  dump($q/=$r). "<br>";
   echo "<h2>Porovnavaci operatory</h2>";
   $s = 8;
   $t = 4;
-  var_dump($s==$t). "<br>";
+  dump($s==$t). "<br>";
   $u = 8;
   $v = 4;
-  var_dump($u!=$v). "<br>";
+  dump($u!=$v). "<br>";
   $w = 8;
   $x = 4;
-  var_dump($w>$x). "<br>";
+  dump($w>$x). "<br>";
   $y = 8;
   $z = 4;
-  var_dump($y<$z). "<br>";
+  dump($y<$z). "<br>";
   echo "<h2>Logicke operatory</h2>";
   $A = 8;
   $B = 4;
-  var_dump($A||$B). "<br>";
+  dump($A||$B). "<br>";
   $C = 8;
   $D = 4;
-  var_dump($A&&$B). "<br>";
+  dump($A&&$B). "<br>";
   $E = 8;
-  var_dump(!$E). "<br>";
+  dump(!$E). "<br>";
   ?>
 <br>
 <?php
@@ -203,7 +214,7 @@ switch ($michalDvorsky1) {
  echo "<br>";
  
     $auta = array(1=>"audi",2=>"bmw",3=>"škoda",4=>"vw",5=>"mergl",6=>"renault",7=>"opel",8=>"toyota",9=>"lamborghini",10=>"hnujdaj");
-    var_dump ($auta);
+    dump ($auta);
 array (10)
 ?>
 <br>
@@ -219,7 +230,7 @@ $PC8 ["pocitace a software"]["stolni pocitace"]["sestava"] = ["Procesor" => 'Int
 $PC9 ["pocitace a software"]["stolni pocitace"]["sestava"] = ["Procesor" => 'Intel Core i5-9600K', "RAM" => 8 ,"Zdroj" => 550, "Vaha" => 6.3,"grafika" => 'GTX 1600'];
 $PC10 ["pocitace a software"]["stolni pocitace"]["sestava"] = ["Procesor" => 'Intel Core i3-8100', "RAM" => 8 ,"Zdroj" => 500, "Vaha" => 5.6,"grafika" => 'GTX 960'];
 
-var_dump ($PC1,$PC2,$PC3,$PC4,$PC5,$PC6,$PC7,$PC8,$PC9,$PC10);
+dump ($PC1,$PC2,$PC3,$PC4,$PC5,$PC6,$PC7,$PC8,$PC9,$PC10);
 ?>
 
 
