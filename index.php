@@ -9,7 +9,6 @@ Debugger::$strictMode = true;?>
 
 
 
-?>
 <?php
 echo "<h2>ECHO VYPIS</h2>";
 
@@ -232,6 +231,52 @@ $PC10 ["pocitace a software"]["stolni pocitace"]["sestava"] = ["Procesor" => 'In
 
 dump ($PC1,$PC2,$PC3,$PC4,$PC5,$PC6,$PC7,$PC8,$PC9,$PC10);
 ?>
+<br>
+<?php
+ $radekMichalDvorsky= 7;
+       $sloupecMichalDvorsky= 17;
+       
+       echo "<table border=1>";
+       for ($i = 0; $i <= $radekMichalDvorsky; $i++){
+           echo "<tr>";
+           for ($a = 0; $a <= $sloupecMichalDvorsky; $a++){
+               echo "<td>".$i."-".$a."</td>";
+           }
+           echo "</tr>";
+        }
+        echo"</table><br>";
+        
+       
+        
+        
+echo '<h2>Matematicke funkce</h2>';
+ // hexdec 16-ková soustava na soustavu 10, log10 Base-10 logarithm
+ // zjednodušeno na echo
+echo hexdec("11ff") . "<br>";
+echo(log10(2) . "<br>");
+echo '<h2>jednorozměrné pole</h2>';
+$key=1;
+       foreach($auta as $auta){
+           echo $key."-".
+                   $auta ."<br>";
+       $key++;}
+       echo '<br>';
+       
+       /**
+             * Pozdraví nás 
+             */
+       
+       function pozdrav()
+{
+    echo('Ahojte všichni kdo tu jste');
+}
+
+pozdrav();
+
+            
+
+?>
+
 
 
     
